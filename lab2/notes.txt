@@ -1,0 +1,18 @@
+zad. 3, 4
+odchylenie standardowe jednego eksperymentu dwupunktowego: sqrt(p * (1 - p))
+odchylenie standardowe średniej: sqrt(1/N * M/N * (1 - M/N))
+odchylenie standardowe szacowania powierzchni koła: S_square * sqrt(1/N * M/N * (1 - M/N))
+
+CTG: nieskończona suma zmiennych losowych o jednakowym rozkładzie i skończonej wariancji ma rozkład normalny
+ok. 95% że wartość szacowania od -2 sigma do +2 sigma
+Niepewność zależy od N^(-1/2)
+
+delta ~ a * N^(-1/2)
+log (delta) ~ log(a) - 1/2 log(N)
+zrobić wykres log(2sigma) od log(N)
+
+chi kwadrat o k - 1 stopniach swobody (bo znamy wartość k-tego słupka w histogramie)
+chi^2_{k-1} = sum from i to k of: (n_i - pi*n)^2/n*pi
+
+rozkład chi_2
+odcinamy 5% powierzchni pod krzywą z prawej, wychodzi z tego wartość krytyczna alpha
