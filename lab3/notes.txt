@@ -1,0 +1,18 @@
+Metoda odwrócenia dystrybuanty
+U(0,1)
+F_x(X) = P(X <= x) = P(f(U) <= x) = P(U <= f^{-1}(x)) = f^{-1}(x)
+f(x) = F^{-1}(X)
+
+Metoda eliminacji
+Jeżeli jest prośba o generację 1000 liczb, to ma na wyjściu być 1000 liczb, a nie
+wygenerować 1000 liczb (i odrzucić część)
+
+Metoda superpozycji
+f_{gp} = p_q * f_1(x) + p_2 * f2(x)
+p_1 + p_2 = 1
+Przydatne, jeśli w większości przypadków rozkład jest prosty, a tylko czasem
+trzeba więcej obliczeń do trudniejszego rozkładu
+
+Metoda oparta o CTG
+
+Zadanie 1 i (Zadanie 2 lub Zadanie 3)
