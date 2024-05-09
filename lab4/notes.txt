@@ -1,0 +1,20 @@
+# Metody redukcji wariancji
+
+* Zwiększyć N (sigma / 10 --> N * 100)
+* Próbkowanie warstwowe (tam gdzie się bardziej zmienia to próbkujemy bardziej,
+  można równomiernie po przeciwdziedzinie)
+* Próbkowanie ważone (importance sampling) -- tam gdzie duże wartości to próbkujemy
+  często, tam gdzie małe wartości to rzadko
+* Zamiana zmiennych (trzeba przeliczyć granice całkowania)
+  int of f(x) dx = int of f(x)/g(x) * dg
+* Zmienne kontrolne -- od funkcji którą całkujemy odejmujemy coś co da się scałkować
+  analitycznie i błąd będzie mniejszy
+
+Zadanie (3 lub 4 lub 5) + (6 lub 7)
+
+Zadanie (3 lub 4 lub 5) -- na wykresie:
+	* od 100 próbek do 100e6
+	* moduł błędu
+	* niepewność lepszej metody
+	* moduł błędu lepszej metody
+  
