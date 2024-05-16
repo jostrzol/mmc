@@ -340,30 +340,59 @@ public:
 };
 /********************************************************************************/
 
-int main() {
+int main(int argc, char *argv[]) {
     // Pierwiastek z liczby osobników (bok kwadratowej siatki).
     // Nie należy bać się liczb rzędu 100 (tysiąca), choć 
     // ciekawe ciekawe wyniki można uzyskać i dla 100.
-    const int bok_mapy = 10;
+    int bok_mapy = 100;
 
     // Liczba osobników zarażonych na początku epidemii.
-    const long chorzy_dnia_zero = 10;
+    long chorzy_dnia_zero = 10;
 
     // Liczba osobników zaszczepionych przed nastaniem epidemii.
-    const long zaszczepieni_dnia_zero = 30;
+    long zaszczepieni_dnia_zero = 30;
 
     // Prawdopodobieństwo zarażenia każdego z sąsiadów 
     // danego osobnika w jednostce czasu.
-    const float beta = 0.5;
+    float beta = 0.5;
 
     // Prawdopodobieństwo wyzdrowienia w jednostce czasu.
-    const float gamma = 0.25;
+    float gamma = 0.25;
 
     // Liczba niezależnych (!) eksperymentów Monte Carlo.
-    const int ile_eksperymentow = 3;
+    int ile_eksperymentow = 3;
 
     // Ile dni trwa pojedynczy eksperyment.
-    const int ile_dni = 10;
+    int ile_dni = 10;
+
+    int i = 1;
+    while (i < argc) {
+        const std::string name = argv[i++];
+        if (i >= argc) {
+            std::cerr << "argument '" << name << "' nie ma wartości\n";
+            return 1;
+        }
+        const std::string value_str = argv[i++];
+
+        if (name == "--bok-mapy")
+            bok_mapy = std::stoi(value_str);
+        else if (name == "--chorzy-dnia-zero")
+            chorzy_dnia_zero = std::stol(value_str);
+        else if (name == "--zaszczepieni-dnia-zero")
+            zaszczepieni_dnia_zero = std::stol(value_str);
+        else if (name == "--beta")
+            beta = std::stof(value_str);
+        else if (name == "--gamma")
+            gamma = std::stof(value_str);
+        else if (name == "--ile-eksperymentow")
+            ile_eksperymentow = std::stoi(value_str);
+        else if (name == "--ile-dni")
+            ile_dni = std::stoi(value_str);
+        else {
+            std::cerr << "nieznany argument '" << name << "'\n";
+            return 1;
+        }
+    }
 
     // Jedno miasto posłuży nam do całej serii eksperymentów Monte Carlo.
     Populacja  miasto(bok_mapy);
