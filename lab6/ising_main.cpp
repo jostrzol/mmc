@@ -19,11 +19,36 @@ using namespace std;
  */
 int main(int argc, char *argv[])
 {
+    int bok_mapy = 10;
+    int energia = -184;
+    int liczba_krokow = 1000;
+
+    int i = 1;
+    while (i < argc) {
+        const std::string name = argv[i++];
+        if (i >= argc) {
+            std::cerr << "argument '" << name << "' nie ma wartości\n";
+            return 1;
+        }
+        const std::string value_str = argv[i++];
+
+        if (name == "--bok-mapy")
+            bok_mapy = std::stoi(value_str);
+        else if (name == "--energia")
+            energia = std::stoi(value_str);
+        else if (name == "--liczba-krokow")
+            liczba_krokow = std::stoi(value_str);
+        else {
+            std::cerr << "nieznany argument '" << name << "'\n";
+            return 1;
+        }
+    }
+
 	cout << "Symulacja modelu Isinga w Zespole Mikrokanonicznym" << endl;
 	
-	ModelIsinga ising(10, -184);
-	ising.doprowadzenie_do_stanu_równowagi(1000);
-	ising.zliczanie_średnich(1000);
+	ModelIsinga ising(bok_mapy, energia);
+	ising.doprowadzenie_do_stanu_równowagi(liczba_krokow);
+	ising.zliczanie_średnich(liczba_krokow);
 
 	cout << "Srednia energia ukladu = " << ising.podaj_średnią_energię_układu() << endl;
 	cout << "Srednia energia duszka = " << ising.podaj_średnią_energię_duszka() << endl;
