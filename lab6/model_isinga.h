@@ -11,22 +11,14 @@
 */
 class ModelIsinga 
 {
+protected:
    /**
     * @brief Długość boku kwadratowej siatki.
     */
 	const int L;
 	int **siatka;	
 
-	/**
-	 * @brief Energia wewnętrzna, ktorą osiągnie próbka na końcu eksperymentu.
-	 */
-	int energia_docelowa_układu;   
 	int energia_początkowa_układu;
-	
-	/**
-	 * @brief Energia dostarczana z zewnątrz do próbki – ma sens tylko w układzie mikrokanonicznym.
-	 */
-	int energia_duszka;
 	
 	int magnetyzacja;
 	float średnia_energia_układu, średnia_energia_duszka, średnia_magnetyzacja, temperatura;
@@ -50,6 +42,8 @@ class ModelIsinga
 	 */
 	void spróbuj_odwrócić_spin_losowego_atomu();
 
+	virtual bool czy_odwrócić_spin(float dE) = 0;
+
 	/** 
 	 * @brief Oblicza zmianę energii wskutek \a hipotetycznego obrócenia spinu 
 	 * atomu o podanych współrzędnych (rzeczywisty spin pozostaje bez zmian).
@@ -57,7 +51,7 @@ class ModelIsinga
 	 * @param y – współrzędna \a y atomu.
 	 * @return Zmiana energii atomu, która nastąpiłaby wskutek odwrócenia jego spinu.
 	 */ 
-	int  deltaE(int x, int y);	
+	int deltaE(int x, int y);	
 
 public:	
 	/** 
@@ -65,11 +59,10 @@ public:
 	 * która zostanie osiągnięta dopiero po przeprowadzeniu eksperymentu, 
 	 * tzn. po wywołaniu metod \ref doprowadzenie_do_stanu_równowagi i \ref zliczanie_średnich.
 	 * @param rozmiar – długość boku siatki.
-	 * @param energia – energia docelowa.
 	 */ 	
-	ModelIsinga(int rozmiar, int energia);		
+	ModelIsinga(int rozmiar);		
 
-	~ModelIsinga();
+	virtual ~ModelIsinga();
 
 	/** 
 	 * @brief Wybiera losowe atomy próbki i próbuje obrócić ich spiny.
@@ -78,22 +71,7 @@ public:
 	 * zwłaszcza przy liczbie kroków mniejszej od liczby atomów w próbce.
 	 * @param liczba_kroków – liczba losowań.
 	 */ 
-	void  doprowadzenie_do_stanu_równowagi(int liczba_kroków);
-	
-	/** 
-	 * @brief Wybiera losowe atomy próbki i próbuje obrócić ich spiny.
-	 * Czynność ta jest wykonywana tyle razy, ile atomów liczy próbka, po czym aktualizowane są 
-	 * statystyki dotyczące energii duszka i próbki.
-	 * Cały ten eksperyment jest powtarzany zadaną liczbę razy, po czym obliczana jest 
-	 * uśredniona magnetyzacja, temperatura, energia wewnętrzna próbki i duszka.
-	 * @param liczba_kroków – liczba powtórzeń eksperymentu.
-	 */ 	
-	void  zliczanie_średnich(int liczba_kroków);
-	
-	float podaj_średnią_energię_duszka();
-	float podaj_średnią_energię_układu();
-	float podaj_średnią_magnetyzację();
-	float podaj_temperaturę();
+	void doprowadzenie_do_stanu_równowagi(int liczba_kroków);
 };
 
 #endif // MODEL_ISINGA_H
