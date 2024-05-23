@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Model Isinga: Dokumentacja klasy ModelIsinga</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Model Isinga
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Symulacja próbki materiału ferrmoagnetycznego z użyciem modelu Isinga.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="classModelIsinga-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy ModelIsinga</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Diagram współpracy dla ModelIsinga:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModelIsinga__coll__graph.png" border="0" usemap="#aModelIsinga_coll__map" alt="Collaboration graph"/></div>
+<map name="aModelIsinga_coll__map" id="aModelIsinga_coll__map">
+<area shape="rect" title=" " alt="" coords="5,95,107,121"/>
+<area shape="rect" href="classRNG.html" title=" " alt="" coords="31,5,81,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a582bd14b099bab959913a9e79cfa757e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelIsinga.html#a582bd14b099bab959913a9e79cfa757e">ModelIsinga</a> (int rozmiar, int energia)</td></tr>
+<tr class="memdesc:a582bd14b099bab959913a9e79cfa757e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy siatkę kwadratową o zadanej długości boku i energii <em>docelowej</em>, która zostanie osiągnięta dopiero po przeprowadzeniu eksperymentu, tzn. po wywołaniu metod <a class="el" href="classModelIsinga.html#a514cab2ef437193c5c8f9453b82d93bc">doprowadzenie_do_stanu_równowagi</a> i <a class="el" href="classModelIsinga.html#ac1520d58c477b4bc9f07a2650debcd31">zliczanie_średnich</a>.  <a href="classModelIsinga.html#a582bd14b099bab959913a9e79cfa757e">Więcej...</a><br /></td></tr>
+<tr class="separator:a582bd14b099bab959913a9e79cfa757e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514cab2ef437193c5c8f9453b82d93bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelIsinga.html#a514cab2ef437193c5c8f9453b82d93bc">doprowadzenie_do_stanu_równowagi</a> (int liczba_kroków)</td></tr>
+<tr class="memdesc:a514cab2ef437193c5c8f9453b82d93bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wybiera losowe atomy próbki i próbuje obrócić ich spiny. Czynność ta jest powtarzana podaną liczbę razy. Nie ma gwarancji, że próbka osiągnie równowagę termodynamiczną, zwłaszcza przy liczbie kroków mniejszej od liczby atomów w próbce.  <a href="classModelIsinga.html#a514cab2ef437193c5c8f9453b82d93bc">Więcej...</a><br /></td></tr>
+<tr class="separator:a514cab2ef437193c5c8f9453b82d93bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1520d58c477b4bc9f07a2650debcd31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelIsinga.html#ac1520d58c477b4bc9f07a2650debcd31">zliczanie_średnich</a> (int liczba_kroków)</td></tr>
+<tr class="memdesc:ac1520d58c477b4bc9f07a2650debcd31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wybiera losowe atomy próbki i próbuje obrócić ich spiny. Czynność ta jest wykonywana tyle razy, ile atomów liczy próbka, po czym aktualizowane są statystyki dotyczące energii duszka i próbki. Cały ten eksperyment jest powtarzany zadaną liczbę razy, po czym obliczana jest uśredniona magnetyzacja, temperatura, energia wewnętrzna próbki i duszka.  <a href="classModelIsinga.html#ac1520d58c477b4bc9f07a2650debcd31">Więcej...</a><br /></td></tr>
+<tr class="separator:ac1520d58c477b4bc9f07a2650debcd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd13e7bf67fc000747fe260eeede96d"><td class="memItemLeft" align="right" valign="top"><a id="adcd13e7bf67fc000747fe260eeede96d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>podaj_średnią_energię_duszka</b> ()</td></tr>
+<tr class="separator:adcd13e7bf67fc000747fe260eeede96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a540837770692ede0b7132fa1f67063c4"><td class="memItemLeft" align="right" valign="top"><a id="a540837770692ede0b7132fa1f67063c4"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>podaj_średnią_energię_układu</b> ()</td></tr>
+<tr class="separator:a540837770692ede0b7132fa1f67063c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536a77b7afb7f9cbff5b3ef86e06f541"><td class="memItemLeft" align="right" valign="top"><a id="a536a77b7afb7f9cbff5b3ef86e06f541"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>podaj_średnią_magnetyzację</b> ()</td></tr>
+<tr class="separator:a536a77b7afb7f9cbff5b3ef86e06f541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cfcd37f7d2809289195f77afa72b145"><td class="memItemLeft" align="right" valign="top"><a id="a2cfcd37f7d2809289195f77afa72b145"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>podaj_temperaturę</b> ()</td></tr>
+<tr class="separator:a2cfcd37f7d2809289195f77afa72b145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a3ac78369f685557988c738332a13195f"><td class="memItemLeft" align="right" valign="top"><a id="a3ac78369f685557988c738332a13195f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelIsinga.html#a3ac78369f685557988c738332a13195f">ustaw_same_jedynki</a> ()</td></tr>
+<tr class="memdesc:a3ac78369f685557988c738332a13195f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia wszystkie spiny "w górę", zamieniając próbkę w pojedynczą domenę magnetyczną. <br /></td></tr>
+<tr class="separator:a3ac78369f685557988c738332a13195f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56fb0f29b4d9661161104216d4c848aa"><td class="memItemLeft" align="right" valign="top"><a id="a56fb0f29b4d9661161104216d4c848aa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelIsinga.html#a56fb0f29b4d9661161104216d4c848aa">spróbuj_odwrócić_spin_losowego_atomu</a> ()</td></tr>
+<tr class="memdesc:a56fb0f29b4d9661161104216d4c848aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Próbuje odwrócić spin losowo wybranego atomu. Sukces tej próby zależy od ustawienia spinów atomów sąsiednich oraz od energii przekazanej atomowi przez duszka (układ mikrokanoniczny) względnie od temperatury próbki (układ kanoniczny). <br /></td></tr>
+<tr class="separator:a56fb0f29b4d9661161104216d4c848aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb46179ec97972a34e27ca41e554ebee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelIsinga.html#afb46179ec97972a34e27ca41e554ebee">deltaE</a> (int x, int y)</td></tr>
+<tr class="memdesc:afb46179ec97972a34e27ca41e554ebee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oblicza zmianę energii wskutek <em>hipotetycznego</em> obrócenia spinu atomu o podanych współrzędnych (rzeczywisty spin pozostaje bez zmian).  <a href="classModelIsinga.html#afb46179ec97972a34e27ca41e554ebee">Więcej...</a><br /></td></tr>
+<tr class="separator:afb46179ec97972a34e27ca41e554ebee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:ad1ca9f2a7767ef55624b3c016ef9e63b"><td class="memItemLeft" align="right" valign="top"><a id="ad1ca9f2a7767ef55624b3c016ef9e63b"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelIsinga.html#ad1ca9f2a7767ef55624b3c016ef9e63b">L</a></td></tr>
+<tr class="memdesc:ad1ca9f2a7767ef55624b3c016ef9e63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Długość boku kwadratowej siatki. <br /></td></tr>
+<tr class="separator:ad1ca9f2a7767ef55624b3c016ef9e63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65672ad78a05c3b6a069bc48f5427d7e"><td class="memItemLeft" align="right" valign="top"><a id="a65672ad78a05c3b6a069bc48f5427d7e"></a>
+int **&#160;</td><td class="memItemRight" valign="bottom"><b>siatka</b></td></tr>
+<tr class="separator:a65672ad78a05c3b6a069bc48f5427d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd22cc1552bb654f4f60a78161bac4c"><td class="memItemLeft" align="right" valign="top"><a id="a6bd22cc1552bb654f4f60a78161bac4c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelIsinga.html#a6bd22cc1552bb654f4f60a78161bac4c">energia_docelowa_układu</a></td></tr>
+<tr class="memdesc:a6bd22cc1552bb654f4f60a78161bac4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energia wewnętrzna, ktorą osiągnie próbka na końcu eksperymentu. <br /></td></tr>
+<tr class="separator:a6bd22cc1552bb654f4f60a78161bac4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f90fb83675fe2622c19ec9009ef385d"><td class="memItemLeft" align="right" valign="top"><a id="a6f90fb83675fe2622c19ec9009ef385d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>energia_początkowa_układu</b></td></tr>
+<tr class="separator:a6f90fb83675fe2622c19ec9009ef385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8824cc8977a98e530cb911b7a419f8"><td class="memItemLeft" align="right" valign="top"><a id="a8c8824cc8977a98e530cb911b7a419f8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelIsinga.html#a8c8824cc8977a98e530cb911b7a419f8">energia_duszka</a></td></tr>
+<tr class="memdesc:a8c8824cc8977a98e530cb911b7a419f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energia dostarczana z zewnątrz do próbki – ma sens tylko w układzie mikrokanonicznym. <br /></td></tr>
+<tr class="separator:a8c8824cc8977a98e530cb911b7a419f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81ad2d4ce1f50389d0de88fc1ea4804"><td class="memItemLeft" align="right" valign="top"><a id="aa81ad2d4ce1f50389d0de88fc1ea4804"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>magnetyzacja</b></td></tr>
+<tr class="separator:aa81ad2d4ce1f50389d0de88fc1ea4804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8987ae8c84f978beb3c6ce15f0fce74"><td class="memItemLeft" align="right" valign="top"><a id="aa8987ae8c84f978beb3c6ce15f0fce74"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>średnia_energia_układu</b></td></tr>
+<tr class="separator:aa8987ae8c84f978beb3c6ce15f0fce74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c33a02f73cb9c0adfaa7ba23fb5e5cf"><td class="memItemLeft" align="right" valign="top"><a id="a5c33a02f73cb9c0adfaa7ba23fb5e5cf"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>średnia_energia_duszka</b></td></tr>
+<tr class="separator:a5c33a02f73cb9c0adfaa7ba23fb5e5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5769aa693435ca4564d13c4091cd314"><td class="memItemLeft" align="right" valign="top"><a id="ab5769aa693435ca4564d13c4091cd314"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>średnia_magnetyzacja</b></td></tr>
+<tr class="separator:ab5769aa693435ca4564d13c4091cd314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18cbc605af011c65cbdd9d1fa955b55a"><td class="memItemLeft" align="right" valign="top"><a id="a18cbc605af011c65cbdd9d1fa955b55a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>temperatura</b></td></tr>
+<tr class="separator:a18cbc605af011c65cbdd9d1fa955b55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a9165c629bdae895c47e057ecc3ad8a"><td class="memItemLeft" align="right" valign="top"><a id="a0a9165c629bdae895c47e057ecc3ad8a"></a>
+<a class="el" href="classRNG.html">RNG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelIsinga.html#a0a9165c629bdae895c47e057ecc3ad8a">generator</a></td></tr>
+<tr class="memdesc:a0a9165c629bdae895c47e057ecc3ad8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generator liczb pseudolosowych. Pozwala generować losowe współrzędne <em>x</em> i <em>y</em>, a także losowe liczby rzeczywiste z przedziału [0, 1). <br /></td></tr>
+<tr class="separator:a0a9165c629bdae895c47e057ecc3ad8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a582bd14b099bab959913a9e79cfa757e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582bd14b099bab959913a9e79cfa757e">&#9670;&nbsp;</a></span>ModelIsinga()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelIsinga::ModelIsinga </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rozmiar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>energia</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy siatkę kwadratową o zadanej długości boku i energii <em>docelowej</em>, która zostanie osiągnięta dopiero po przeprowadzeniu eksperymentu, tzn. po wywołaniu metod <a class="el" href="classModelIsinga.html#a514cab2ef437193c5c8f9453b82d93bc">doprowadzenie_do_stanu_równowagi</a> i <a class="el" href="classModelIsinga.html#ac1520d58c477b4bc9f07a2650debcd31">zliczanie_średnich</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rozmiar</td><td>– długość boku siatki. </td></tr>
+    <tr><td class="paramname">energia</td><td>– energia docelowa. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="afb46179ec97972a34e27ca41e554ebee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb46179ec97972a34e27ca41e554ebee">&#9670;&nbsp;</a></span>deltaE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ModelIsinga::deltaE </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Oblicza zmianę energii wskutek <em>hipotetycznego</em> obrócenia spinu atomu o podanych współrzędnych (rzeczywisty spin pozostaje bez zmian). </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>– współrzędna <em>x</em> atomu. </td></tr>
+    <tr><td class="paramname">y</td><td>– współrzędna <em>y</em> atomu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Zmiana energii atomu, która nastąpiłaby wskutek odwrócenia jego spinu. </dd></dl>
+
+</div>
+</div>
+<a id="a514cab2ef437193c5c8f9453b82d93bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514cab2ef437193c5c8f9453b82d93bc">&#9670;&nbsp;</a></span>doprowadzenie_do_stanu_równowagi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelIsinga::doprowadzenie_do_stanu_równowagi </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>liczba_kroków</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wybiera losowe atomy próbki i próbuje obrócić ich spiny. Czynność ta jest powtarzana podaną liczbę razy. Nie ma gwarancji, że próbka osiągnie równowagę termodynamiczną, zwłaszcza przy liczbie kroków mniejszej od liczby atomów w próbce. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">liczba_kroków</td><td>– liczba losowań. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac1520d58c477b4bc9f07a2650debcd31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1520d58c477b4bc9f07a2650debcd31">&#9670;&nbsp;</a></span>zliczanie_średnich()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelIsinga::zliczanie_średnich </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>liczba_kroków</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wybiera losowe atomy próbki i próbuje obrócić ich spiny. Czynność ta jest wykonywana tyle razy, ile atomów liczy próbka, po czym aktualizowane są statystyki dotyczące energii duszka i próbki. Cały ten eksperyment jest powtarzany zadaną liczbę razy, po czym obliczana jest uśredniona magnetyzacja, temperatura, energia wewnętrzna próbki i duszka. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">liczba_kroków</td><td>– liczba powtórzeń eksperymentu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="model__isinga_8h_source.html">model_isinga.h</a></li>
+<li>model_isinga.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Śr, 31 maj 2023 10:49:47 dla Model Isinga programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

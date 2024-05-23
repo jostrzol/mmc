@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Model Isinga: Dokumentacja klasy RNG</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Model Isinga
+   &#160;<span id="projectnumber">2</span>
+   </div>
+   <div id="projectbrief">Symulacja próbki materiału ferrmoagnetycznego z użyciem modelu Isinga.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="classRNG-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy RNG</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a09afc1b0e3afd5fee5cc15d203712213"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRNG.html#a09afc1b0e3afd5fee5cc15d203712213">RNG</a> (int bok_siatki)</td></tr>
+<tr class="memdesc:a09afc1b0e3afd5fee5cc15d203712213"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy generator liczb pseudolosowych przeznaczony do współpracy z siatką kwadratową o zadanej wielkości. Generator wykorzystuje algorytm Mersenne Twister 19937.  <a href="classRNG.html#a09afc1b0e3afd5fee5cc15d203712213">Więcej...</a><br /></td></tr>
+<tr class="separator:a09afc1b0e3afd5fee5cc15d203712213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9587eb41aaf02e5fbf22b7d558f45db0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRNG.html#a9587eb41aaf02e5fbf22b7d558f45db0">losuj_współrzedną</a> ()</td></tr>
+<tr class="memdesc:a9587eb41aaf02e5fbf22b7d558f45db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Losuje liczbę <em>całkowitą</em> o rozkładzie równomiernym na przedziale [0, bok_siatki - 1].  <a href="classRNG.html#a9587eb41aaf02e5fbf22b7d558f45db0">Więcej...</a><br /></td></tr>
+<tr class="separator:a9587eb41aaf02e5fbf22b7d558f45db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24aec02694597f86840ce4291216a8a9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRNG.html#a24aec02694597f86840ce4291216a8a9">losuj_z_zakresu_0_1</a> ()</td></tr>
+<tr class="memdesc:a24aec02694597f86840ce4291216a8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Losuje liczbę <em>rzeczywistą</em> o rozkładzie równomiernym na przedziale [0, 1). Metoda przydatna przy implementacji operacji, które mają zostać wykonane z określonym prawdopodobieństwem.  <a href="classRNG.html#a24aec02694597f86840ce4291216a8a9">Więcej...</a><br /></td></tr>
+<tr class="separator:a24aec02694597f86840ce4291216a8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a37447f28c1b1867a47831135c94010bd"><td class="memItemLeft" align="right" valign="top"><a id="a37447f28c1b1867a47831135c94010bd"></a>
+std::mt19937_64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRNG.html#a37447f28c1b1867a47831135c94010bd">źródło_losowe</a></td></tr>
+<tr class="memdesc:a37447f28c1b1867a47831135c94010bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorytm generacji liczb pseudolosowych. <br /></td></tr>
+<tr class="separator:a37447f28c1b1867a47831135c94010bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d02ffe547b53c89ba552bd484ce50d"><td class="memItemLeft" align="right" valign="top"><a id="a90d02ffe547b53c89ba552bd484ce50d"></a>
+std::uniform_int_distribution&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRNG.html#a90d02ffe547b53c89ba552bd484ce50d">rozkład_lokalizacji</a></td></tr>
+<tr class="memdesc:a90d02ffe547b53c89ba552bd484ce50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rozkład równomierny dyskretny, przydatny do losowania współrzędnych <em>x</em> lub <em>y</em> w obrębie siatki. <br /></td></tr>
+<tr class="separator:a90d02ffe547b53c89ba552bd484ce50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0791b8c2050aadb93a0d6344f2212027"><td class="memItemLeft" align="right" valign="top"><a id="a0791b8c2050aadb93a0d6344f2212027"></a>
+std::uniform_real_distribution&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRNG.html#a0791b8c2050aadb93a0d6344f2212027">rozkład_jednostajny_0_1</a></td></tr>
+<tr class="memdesc:a0791b8c2050aadb93a0d6344f2212027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rozkład równomierny ciągły z zakresu [0, 1). <br /></td></tr>
+<tr class="separator:a0791b8c2050aadb93a0d6344f2212027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a09afc1b0e3afd5fee5cc15d203712213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09afc1b0e3afd5fee5cc15d203712213">&#9670;&nbsp;</a></span>RNG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RNG::RNG </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bok_siatki</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy generator liczb pseudolosowych przeznaczony do współpracy z siatką kwadratową o zadanej wielkości. Generator wykorzystuje algorytm Mersenne Twister 19937. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bok_siatki</td><td>Długość boku kwadratowej siatki, z którą będzie współpracował generator. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a9587eb41aaf02e5fbf22b7d558f45db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9587eb41aaf02e5fbf22b7d558f45db0">&#9670;&nbsp;</a></span>losuj_współrzedną()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RNG::losuj_współrzedną </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Losuje liczbę <em>całkowitą</em> o rozkładzie równomiernym na przedziale [0, bok_siatki - 1]. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wylosowana liczba. </dd></dl>
+
+</div>
+</div>
+<a id="a24aec02694597f86840ce4291216a8a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24aec02694597f86840ce4291216a8a9">&#9670;&nbsp;</a></span>losuj_z_zakresu_0_1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RNG::losuj_z_zakresu_0_1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Losuje liczbę <em>rzeczywistą</em> o rozkładzie równomiernym na przedziale [0, 1). Metoda przydatna przy implementacji operacji, które mają zostać wykonane z określonym prawdopodobieństwem. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Wylosowana liczba. <br  />
+ </dd></dl>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="rng_8h_source.html">rng.h</a></li>
+<li>rng.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Śr, 31 maj 2023 10:49:47 dla Model Isinga programem&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

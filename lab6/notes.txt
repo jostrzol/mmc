@@ -1,0 +1,17 @@
+stan wyjściowy - wszystkie spiny w jedną stronę (niska temperatura)
+
+jak zwiększamy temperaturę to po jakimś czasie gwałtownie spada (punkt Curie T_C)
+
+układ mikrokanoniczny
+* duszek losowo oddaje energię po kwancie
+* jak się atomowi odda trochę energii to się odwróci
+* jak ma dużo sąsiadów skierowanych w tę samą stronę to ciężej obrócić
+
+układ kanoniczny
+* nie wstrzykujemy energii explicite
+* operujemy temperaturami
+* do piekarnika na 200 oC
+* p ~ exp(- \delta E/kT) - prawdopodobieństwo że uda się obrócić atom, którego obrócenie wymaga \delta E energii
+* wzrost temperatury powoduje podniesienie do góry krzywej wykładniczej
+* jeżeli energia jest ujemna to p = 1 -- obracamy atom
+* w przeciwnym wypadku losujemy liczbę U_{0,1}, jak będzie mniejsza to się udało jak większa to nie
