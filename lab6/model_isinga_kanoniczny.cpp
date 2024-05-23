@@ -8,6 +8,9 @@ ModelIsingaKanoniczny::ModelIsingaKanoniczny(int rozmiar, float temperatura)
 
 bool ModelIsingaKanoniczny::czy_odwrócić_spin(float dE)
 {
+	if (dE < 0)
+		return true;
+
 	auto prawdopodobieństwo_odwrócenia = exp(-dE / temperatura);
 	auto losowa_liczba = generator.losuj_z_zakresu_0_1();
 	return losowa_liczba <= prawdopodobieństwo_odwrócenia;

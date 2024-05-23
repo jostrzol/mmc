@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     int bok_mapy = 10;
     int energia = -184;
     bool energia_ustawiona = false;
-    int temperatura = 0;
+    double temperatura = 0;
     bool temperatura_ustawiona = false;
     double liczba_krokow = 1000;
 
