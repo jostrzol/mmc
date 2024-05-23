@@ -1,6 +1,7 @@
 #include <iostream>
 #include "model_isinga.h"
 #include "model_isinga_mikrokanoniczny.h"
+#include "model_isinga_kanoniczny.h"
 
 using namespace std;
 
@@ -71,18 +72,30 @@ int main(int argc, char *argv[])
     }
 
     if (!temperatura_ustawiona)
+    {
         cout << "Symulacja modelu Isinga w Zespole Mikrokanonicznym" << endl;
+
+        ModelIsingaMikrokanoniczny ising(bok_mapy, energia);
+        ising.doprowadzenie_do_stanu_równowagi(liczba_krokow);
+        ising.zliczanie_średnich(liczba_krokow);
+
+        cout << "Srednia energia ukladu = " << ising.podaj_średnią_energię_układu() << endl;
+        cout << "Srednia energia duszka = " << ising.podaj_średnią_energię_duszka() << endl;
+        cout << "Srednia magnetyzacja   = " << ising.podaj_średnią_magnetyzację() << endl;
+        cout << "Temperatura            = " << ising.podaj_temperaturę() << endl;
+    }
     else
+    {
         cout << "Symulacja modelu Isinga w Zespole Kanonicznym" << endl;
 
-    ModelIsingaMikrokanoniczny ising(bok_mapy, energia);
-    ising.doprowadzenie_do_stanu_równowagi(liczba_krokow);
-    ising.zliczanie_średnich(liczba_krokow);
+        ModelIsingaKanoniczny ising(bok_mapy, temperatura);
+        ising.doprowadzenie_do_stanu_równowagi(liczba_krokow);
+        ising.zliczanie_średnich(liczba_krokow);
 
-    cout << "Srednia energia ukladu = " << ising.podaj_średnią_energię_układu() << endl;
-    cout << "Srednia energia duszka = " << ising.podaj_średnią_energię_duszka() << endl;
-    cout << "Srednia magnetyzacja   = " << ising.podaj_średnią_magnetyzację() << endl;
-    cout << "Temperatura            = " << ising.podaj_temperaturę() << endl;
+        cout << "Srednia energia ukladu = " << ising.podaj_średnią_energię_układu() << endl;
+        cout << "Srednia magnetyzacja   = " << ising.podaj_średnią_magnetyzację() << endl;
+        cout << "Temperatura            = " << ising.podaj_temperaturę() << endl;
+    }
 
     return 0;
 }
