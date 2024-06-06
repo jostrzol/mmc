@@ -1,0 +1,22 @@
+T hiestereza:
+eksponens w górę eksp. w dół
+modelujemy sinusem
+rozkład T: arcsin
+
+\sigma^2(y) = sum { \sigma^2_xi * (dy/dxi)^2 }
+
+rozkład sumy to nie suma rozkładów
+wyjącek: dla niezależnych rozkładów normalnych
+
+
+zad1
+sumujemy -> histogram
+odcinamy dolne i górne 2.5%
+sprawdzamy co wyszło
+
+zad2
+dochodzimy 2 metodami
+albo z eksperymentu
+albo wartość oczekiwana +- 2 sigma
+
+zad3
