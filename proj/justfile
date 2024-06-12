@@ -1,0 +1,8 @@
+build:
+  xelatex --halt-on-error -output-directory=out/ --no-pdf *.tex && \
+    biber ./out/*.bcf && \
+    xelatex --halt-on-error -output-directory=out/ *.tex
+
+watch:
+  evince ./out/*.pdf & \
+    watchexec -e tex just build
